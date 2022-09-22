@@ -1,5 +1,5 @@
 /* Imports */
-
+console.log('initial commit for dev');
 /* Get DOM Elements */
 
 /* State */
