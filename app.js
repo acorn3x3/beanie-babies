@@ -62,6 +62,11 @@ async function findBeanieBabies(name, astroSign) {
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    const formData = new FormData(searchForm);
+    const name = formData.get('name');
+    const astroSign = formData.get('astroSign');
+    findBeanieBabies(name, astroSign);
+
     //const formData = new FormData(searchForm);
 
     // > Part C: Call findBeanieBabies with name and astrosign from formData
