@@ -34,10 +34,10 @@ button {
 }
 
 .card {
-    background: white;
+    background: rgb(136, 10, 10);
     border: 1px solid lightgrey;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 2px 4px 0 rgba(240, 236, 236, 0.966), 0 25px 50px 0 rgb(241, 239, 239);
+    color: aliceblue;
     padding: 10px;
     text-align: center;
 
