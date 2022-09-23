@@ -25,7 +25,7 @@ export async function getBeanieBabies(name, astroSign) {
         // > Part C: add query for name
     }
 
-    if (astrosign) {
+    if (astroSign) {
         query = query.eq('astroSign', astroSign);
         // > Part C: add query for continent
     }
@@ -35,6 +35,10 @@ export async function getBeanieBabies(name, astroSign) {
 }
 
 export async function getAstrosigns() {
+    let query = client.from('beanie_baby_astroSigns').select('*');
+    const response = await query;
+
+    return response;
     // > Part B: await client query from country_continents
     // (select all columns) and return response
 }
