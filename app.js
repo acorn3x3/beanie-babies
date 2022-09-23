@@ -49,7 +49,7 @@ async function findBeanieBabies(name, astroSign) {
     // console.log(response.data);
     error = response.error;
     beanieBabies = response.data;
-    count = response.count;
+    // count = response.count;
 
     // > Part D: Assign to state the:
     //      - count (of db records)
