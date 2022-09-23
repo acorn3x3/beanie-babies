@@ -13,7 +13,7 @@ const beanieBabyList = document.getElementById('beanie-list');
 
 /* State */
 let error = null;
-let count = 0;
+//let count = 0;
 let astroSigns = [];
 let beanieBabies = [];
 
@@ -46,7 +46,7 @@ async function findBeanieBabies(name, astroSign) {
     // > Part A: Assign to state the :
     //      - error,
     //      - data (to the BeanieBabies variable)
-    console.log(response.data);
+    // console.log(response.data);
     error = response.error;
     beanieBabies = response.data;
     count = response.count;
@@ -62,7 +62,7 @@ async function findBeanieBabies(name, astroSign) {
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const formData = new FormData(searchForm);
+    //const formData = new FormData(searchForm);
 
     // > Part C: Call findBeanieBabies with name and astrosign from formData
 });
