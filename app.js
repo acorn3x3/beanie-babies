@@ -13,7 +13,7 @@ const beanieBabyList = document.getElementById('beanie-list');
 
 /* State */
 let error = null;
-//let count = 0;
+let count = 0;
 let astroSigns = [];
 let beanieBabies = [];
 
@@ -26,6 +26,7 @@ window.addEventListener('load', async () => {
 
     error = response.error;
     astroSigns = response.data;
+    count = response.count;
     // > Part B: await the call to get astrosign to get the response
 
     // > Part B: Assign to state the:
@@ -92,6 +93,7 @@ function displayNotifications() {
         // > Part D: Display a message with
         //      - how many items were returned in BeanieBabies array
         //      - how many total matching BeanieBabies were in the db
+        notificationDisplay.textContent = `Showing ${beanieBabies.length} of ${count} matching Beanie Babies`;
     }
 }
 
