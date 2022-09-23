@@ -35,7 +35,7 @@ export async function getBeanieBabies(name, astroSign) {
 }
 
 export async function getAstrosigns() {
-    let query = client.from('beanie_baby_astroSigns').select('*');
+    let query = client.from('beanie_baby_astro_signs').select('*');
     const response = await query;
 
     return response;

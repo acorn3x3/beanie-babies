@@ -10,7 +10,7 @@ export function renderBeanieBaby(beanieBaby) {
     li.classList.add('card');
 
     const img = document.createElement('img');
-    img.src = beanieBaby.png;
+    img.src = beanieBaby.image;
     img.alt = beanieBaby.title;
 
     const h2 = document.createElement('h2');
